@@ -1,0 +1,31 @@
+<html>
+<head>
+<style>
+    .blind {
+        max-width: 200px
+    }
+</style>
+</head>
+<body>
+<h1>Example App</h1>
+<p>Use this app for testing and playing around with Silk. Displays a range of Products. Use admin to add them.</p>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Company</th>
+        <th>Is available</th>
+    </tr>
+    {% for product in products %}
+        <tr>
+            <td>{{ product.name }}</td>
+            <td>{{ product.category }}</td>
+            <td>{{ product.price }}</td>
+            <td>{{ product.company }}</td>
+            <td>{{ product.is_available }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

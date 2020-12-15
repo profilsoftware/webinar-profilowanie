@@ -1,0 +1,5 @@
+# insert profile decorator
+
+kernprof -l talk_python_app.py
+
+python -m line_profiler talk_python_app.py.lprof

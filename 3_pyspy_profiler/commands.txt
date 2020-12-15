@@ -1,0 +1,15 @@
+py-spy top -- python talk_python_app.py
+
+----------------------------------------------------------------
+while true; do ps aux | grep "talk_python_app.py" | grep -v grep; sleep 5; done;
+
+python talk_python_app.py
+
+py-spy top --pid 1234
+
+----------------------------------------------------------------
+while true; do ps aux | grep "talk_python_app.py" | grep -v grep; sleep 5; done;
+
+python talk_python_app.py
+
+py-spy dump --pid 1234

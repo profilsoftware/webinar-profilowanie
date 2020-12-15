@@ -1,0 +1,3 @@
+python -m cProfile -o talk_python_app.prof talk_python_app.py
+
+snakeviz talk_python_app.prof
